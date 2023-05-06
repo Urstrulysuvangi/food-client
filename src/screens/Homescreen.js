@@ -9,8 +9,8 @@ export default function Homescreen() {
 
             {pizzas.map(pizza=>{
 
-                return <div className="col-md-4">
-                    <div>
+                return <div className="col-md-4 p-3">
+                    <div className='m-3'>
                         <Pizza pizza={pizza}/>
                     </div>    
                 </div>

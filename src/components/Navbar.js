@@ -6,7 +6,7 @@ export default function Navbar() {
       {/* This is a Navbar cdn from bootstrap  */}
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <a className="navbar-brand" href="#">
-          AEC FOOD APP
+          Swaad@AEC
         </a>
         <button
           className="navbar-toggler"

@@ -1,11 +1,11 @@
 const pizzas = [
   {
     name: "Chicken Biryani",
-    variants: ["half", "full"],
+    variants: ["Full", "Half"],
     prices: [
       {
-        half: 80,
-        full: 160,
+        Full: 140,
+        Half: 80
       },
     ],
     category: "nonveg",
@@ -26,6 +26,21 @@ const pizzas = [
     image:
       "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/gepq1hs7ik070udosrbp",
     description: "Chicken Roll with nutricious veggies and juicy chicken",
+  },
+  {
+    name: "Garam Chai ki Pyali",
+    variants: ["Full", "Cutting", "Machine"],
+    prices: [
+      {
+        "Full": 15,
+        "Cutting": 10,
+        "Machine": 8,
+      },
+    ],
+    category: "beverage",
+    image:
+      "https://static.toiimg.com/thumb/74331975.cms?width=1200&height=900",
+    description: "A hot cup of tea and one biscuit from our side",
   },
 ];
 

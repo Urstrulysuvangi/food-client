@@ -1,2 +1,6 @@
 In Navbar.js, for ul component, the ml-auto class is not working
 because of which the Home and Feature button are not moving to the left margin of the screen.
+
+The default state for Chicken roll has not been set, as default is full, so price cannont of calculated unless the variant is changed.
+
+56 pop up Modal not added
