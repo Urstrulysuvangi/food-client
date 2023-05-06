@@ -1,0 +1,2 @@
+In Navbar.js, for ul component, the ml-auto class is not working
+because of which the Home and Feature button are not moving to the left margin of the screen.
