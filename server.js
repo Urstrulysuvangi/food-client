@@ -7,31 +7,28 @@ const app = express();
 
 app.use(express.json());
 
+const pizzasRoute = require('./routes/pizzasRoute.js')
+
+
+app.use('/api/pizzas/', pizzasRoute)
+
 app.get('/', (req, res) => {
   res.send('server working');
 });
 
-// app.get('/getpizzas', async (req, res) => {
-//   try {
-//     const docs = await Pizza.find({});
-//     res.send(docs);
-//   } catch (err) {
-//     console.log(err);
-//   }
+
+// app.get("/getpizzas", (req, res) => {
+//   Pizza.find({})
+//     .exec()
+//     .then((docs) => {
+//       res.send(docs);
+//     })S
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).send("Error retrieving pizzas");
+//     });
 // });
 
-app.get("/getpizzas", (req, res) => {
-  Pizza.find({})
-    .exec()
-    .then((docs) => {
-      res.send(docs);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send("Error retrieving pizzas");
-    });
-});
-
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server Running on port ${port}`));
