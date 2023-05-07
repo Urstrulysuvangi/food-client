@@ -1,17 +1,19 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-var mongoURL = 'mongodb+srv://Suvangi:Loknath%401@cluster0.1xhlcrh.mongodb.net/';
+var mongoURL = 'mongodb+srv://DBUser:DBUserAEC@cluster0.chaxi07.mongodb.net/mern-pizza'
 
-mongoose.connect(mongoURL,{useUnifiedTopology:true, useNewUrlParser:true})
+mongoose.connect(mongoURL, {useUnifiedTopology:true, useNewUrlParser:true})
 
-var db= mongoose.connection
+var db = mongoose.connection
 
-db.on('connected',()=>{
+db.on('connected' , ()=>{
     console.log('MongoDB connected');
+
 })
 
-db.on('error', ()=>{
-    console.log("mongo conn failed");
+db.on('error' , ()=>{
+    console.log('MongoDB Connection Failed');
+
 })
 
-module.exports =mongoose
+module.exports = mongoose

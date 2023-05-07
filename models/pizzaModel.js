@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const swaadSchema = mongoose.Schema({
+const pizzaSchema = mongoose.Schema({
     name : {type: String, require},
     variants: [],
     prices: [],
@@ -11,6 +11,6 @@ const swaadSchema = mongoose.Schema({
     timestamps: true
 })
 
-const swaadModel = mongoose.model('menu', swaadSchema)
+const pizzaModel = mongoose.model('pizzas', pizzaSchema)
 
-module.exports =swaadModel
+module.exports = pizzaModel
